@@ -146,7 +146,7 @@ export default function WhatsApp() {
       </ScrollView>
 
       <TouchableOpacity style={styles.message}>
-        <MaterialIcons name="message" size={24} color="white" />
+        <MaterialIcons name="message" size={22} color="white" />
       </TouchableOpacity>
     </View>
   );
@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#008069',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    borderTopStartRadius: 20,
-    borderTopEndtRadius: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
   },
   headerRow: {
     padding: 16,
@@ -246,6 +246,5 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     shadowOpacity: 0.3,
     shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 2
   },
 });
