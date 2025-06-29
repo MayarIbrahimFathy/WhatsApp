@@ -96,7 +96,7 @@ export default function WhatsApp() {
 
   return (
     <View style={styles.container}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 16, paddingTop: 10 }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingTop: 10 }}>
         <Text style={{ color: 'white', fontSize: 12 }}>9:41</Text>
         <View style={{ flexDirection: 'row', gap: 6 }}>
           <FontAwesome name="signal" size={15} color="white" />
@@ -145,7 +145,7 @@ export default function WhatsApp() {
         ))}
       </ScrollView>
 
-      <TouchableOpacity style={styles.fab}>
+      <TouchableOpacity style={styles.message}>
         <MaterialIcons name="message" size={24} color="white" />
       </TouchableOpacity>
     </View>
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   },
   headerRow: {
     padding: 16,
-    paddingTop: 50,
+    paddingTop: 20,
     backgroundColor: '#008069',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     color: '#555',
     fontSize: 14
   },
-  fab: {
+  message: {
     position: 'absolute',
     bottom: 20,
     right: 20,
@@ -248,8 +248,4 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 2
   },
-  fabText: {
-    fontSize: 24,
-    color: '#fff'
-  }
 });
